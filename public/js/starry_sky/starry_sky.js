@@ -43,7 +43,7 @@ function sky() {
     const blue = 34;
     const innerGreen = 184;
     const alpha = 0.8;
-    const colorString = "rgba(" + red + "," + green + "," + blue + ",";// + alpha + ")";
+    const colorString = "rgba(" + red + "," + green + "," + blue + ","; // + alpha + ")"; added later
     const posX = getRandomInt(0, canvasX);
     const posY = canvasY;
     const w = 6;
@@ -51,7 +51,7 @@ function sky() {
     const radius = 300;
     rect(posX, posY, w, h, radius);
     // Inner flame
-    const colorStringInner = "rgba(" + red + "," + innerGreen + "," + blue + ",";// + alpha + ")";
+    const colorStringInner = "rgba(" + red + "," + innerGreen + "," + blue + ","; // + alpha + ")"; added later
     const innerPosX = posX+1.5;
     const innerPosY = posY+w-w/2;
     const innerW = w-w/2;
