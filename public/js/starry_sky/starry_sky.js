@@ -1,9 +1,12 @@
+let wind = null; // Can be null, left, or right
 function sky() {
   function getRandomInt(min, max) {
     min = Math.ceil(min);
     max = Math.floor(max);
-    return Math.floor(Math.random() * (max - min)) + min;
+    //The maximum is inclusive and the minimum is inclusive
+    return Math.floor(Math.random() * (max - min + 1)) + min; 
   }
+
 
   function generateStars() {
     const starsAmount = canvasX + canvasY * 25; // This makes it proportional to the size of the canvas
@@ -109,7 +112,6 @@ function sky() {
         spark.sparkPosY -= 1;
         spark.innerPosY -= 1;
       }
-      let wind = null; // Can be null, left, or right
       let moveRightChance = 0.9;
       let moveLeftChance = 0.1;
       if (wind === "right") {
